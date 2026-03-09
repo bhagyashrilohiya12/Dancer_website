@@ -9,7 +9,7 @@ export default function Videos() {
   const [videoModal, setVideoModal] = useState({ open: false, url: '' });
 
   useEffect(() => {
-    fetch('/src/content/videos.json').then(r => r.json()).then(setVideos);
+    fetch('/content/videos.json').then(r => r.json()).then(setVideos);
     AOS.init({ duration: 900, once: true, offset: 80 });
   }, []);
 

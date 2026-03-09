@@ -21,13 +21,13 @@ function App() {
   const [videoModal, setVideoModal] = useState({ open: false, url: '' });
 
   useEffect(() => {
-    fetch('/src/content/bio.json').then(r => r.json()).then(setBio);
-    fetch('/src/content/gallery.json').then(r => r.json()).then(setGallery);
-    fetch('/src/content/videos.json').then(r => r.json()).then(setVideos);
-    fetch('/src/content/events.json').then(r => r.json()).then(setEvents);
-    fetch('/src/content/contact.json').then(r => r.json()).then(setContact);
-    fetch('/src/content/testimonials.json').then(r => r.json()).then(setTestimonials);
-    fetch('/src/content/socials.json').then(r => r.json()).then(setSocials);
+    fetch('/content/bio.json').then(r => r.json()).then(setBio);
+    fetch('/content/gallery.json').then(r => r.json()).then(setGallery);
+    fetch('/content/videos.json').then(r => r.json()).then(setVideos);
+    fetch('/content/events.json').then(r => r.json()).then(setEvents);
+    fetch('/content/contact.json').then(r => r.json()).then(setContact);
+    fetch('/content/testimonials.json').then(r => r.json()).then(setTestimonials);
+    fetch('/content/socials.json').then(r => r.json()).then(setSocials);
     AOS.init({ duration: 900, once: true, offset: 80 });
     // Parallax effect for hero video
     const handleScroll = () => {

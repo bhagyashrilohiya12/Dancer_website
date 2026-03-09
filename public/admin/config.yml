@@ -9,7 +9,7 @@ collections:
   - name: "bio"
     label: "Bio"
     files:
-      - file: "src/content/bio.json"
+      - file: "public/content/bio.json"
         label: "Bio Info"
         name: "bio"
         fields:
@@ -20,7 +20,7 @@ collections:
   - name: "gallery"
     label: "Gallery"
     files:
-      - file: "src/content/gallery.json"
+      - file: "public/content/gallery.json"
         label: "Gallery"
         name: "gallery"
         fields:
@@ -30,7 +30,7 @@ collections:
   - name: "videos"
     label: "Videos"
     files:
-      - file: "src/content/videos.json"
+      - file: "public/content/videos.json"
         label: "Videos"
         name: "videos"
         fields:
@@ -40,18 +40,20 @@ collections:
 
   - name: "events"
     label: "Events"
-    label_singular: "Event"
-    folder: "src/content/events.json"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+    files:
+      - file: "public/content/events.json"
+        label: "Events"
+        name: "events"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
 
   - name: "contact"
     label: "Contact"
     files:
-      - file: "src/content/contact.json"
+      - file: "public/content/contact.json"
         label: "Contact Info"
         name: "contact"
         fields:

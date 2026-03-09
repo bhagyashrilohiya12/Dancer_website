@@ -11,7 +11,7 @@ export default function Photos() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   useEffect(() => {
-    fetch('/src/content/gallery.json').then(r => r.json()).then(setGallery);
+    fetch('/content/gallery.json').then(r => r.json()).then(setGallery);
     AOS.init({ duration: 900, once: true, offset: 80 });
   }, []);
 
