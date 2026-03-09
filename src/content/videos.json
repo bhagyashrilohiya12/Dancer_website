@@ -1,0 +1,12 @@
+[
+  {
+    "thumbnail": "/src/assets/video1.jpg",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "caption": "Solo Performance at Gala Night"
+  },
+  {
+    "thumbnail": "/src/assets/video2.jpg",
+    "url": "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+    "caption": "Choreography Workshop Highlight"
+  }
+]

@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "bio"
+    label: "Bio"
+    files:
+      - file: "src/content/bio.json"
+        label: "Bio Info"
+        name: "bio"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
+
+  - name: "gallery"
+    label: "Gallery"
+    label_singular: "Gallery Item"
+    folder: "src/content/gallery.json"
+    create: true
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Caption", name: "caption", widget: "string" }
+
+  - name: "videos"
+    label: "Videos"
+    label_singular: "Video"
+    folder: "src/content/videos.json"
+    create: true
+    fields:
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Caption", name: "caption", widget: "string" }
+
+  - name: "events"
+    label: "Events"
+    label_singular: "Event"
+    folder: "src/content/events.json"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+
+  - name: "contact"
+    label: "Contact"
+    files:
+      - file: "src/content/contact.json"
+        label: "Contact Info"
+        name: "contact"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
