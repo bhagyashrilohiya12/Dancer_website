@@ -19,22 +19,24 @@ collections:
 
   - name: "gallery"
     label: "Gallery"
-    label_singular: "Gallery Item"
-    folder: "src/content/gallery.json"
-    create: true
-    fields:
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Caption", name: "caption", widget: "string" }
+    files:
+      - file: "src/content/gallery.json"
+        label: "Gallery"
+        name: "gallery"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Caption", name: "caption", widget: "string" }
 
   - name: "videos"
     label: "Videos"
-    label_singular: "Video"
-    folder: "src/content/videos.json"
-    create: true
-    fields:
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
-      - { label: "Caption", name: "caption", widget: "string" }
+    files:
+      - file: "src/content/videos.json"
+        label: "Videos"
+        name: "videos"
+        fields:
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+          - { label: "Caption", name: "caption", widget: "string" }
 
   - name: "events"
     label: "Events"
