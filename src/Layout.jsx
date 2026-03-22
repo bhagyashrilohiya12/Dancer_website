@@ -1,15 +1,22 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
 import ContactForm from './pages/Contact';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Layout() {
   const [contactOpen, setContactOpen] = useState(false);
+  const location = useLocation();
   useEffect(() => {
+    AOS.init({ duration: 900, once: true, offset: 80 });
     const handler = () => setContactOpen(true);
     window.addEventListener('openContactPopup', handler);
     return () => window.removeEventListener('openContactPopup', handler);
   }, []);
+  useEffect(() => {
+    AOS.refresh();
+  }, [location.pathname]);
   return (
     <>
       <nav className="main-nav">

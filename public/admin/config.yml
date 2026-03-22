@@ -15,7 +15,16 @@ collections:
         fields:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+          - { label: "Location", name: "location", widget: "string", required: false }
+          - { label: "Styles", name: "styles", widget: "list", required: false }
+          - { label: "Press / Collaborators", name: "press", widget: "list", required: false }
+          - { label: "Availability", name: "availability", widget: "string", required: false }
+          - { label: "Response Time", name: "responseTime", widget: "string", required: false }
+          - { label: "Booking Types", name: "bookingTypes", widget: "list", required: false }
+          - { label: "Booking Blurb", name: "bookingBlurb", widget: "text", required: false }
           - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Hero / Dance Photo", name: "profileImage", widget: "image", required: false }
 
   - name: "gallery"
     label: "Gallery"
@@ -24,8 +33,10 @@ collections:
         label: "Gallery"
         name: "gallery"
         fields:
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Upload", name: "image", widget: "image", required: false }
+          - { label: "Image Link", name: "imageLink", widget: "string", required: false }
           - { label: "Caption", name: "caption", widget: "string" }
+          - { label: "Featured", name: "featured", widget: "boolean", required: false }
 
   - name: "videos"
     label: "Videos"
@@ -34,9 +45,11 @@ collections:
         label: "Videos"
         name: "videos"
         fields:
-          - { label: "URL", name: "url", widget: "string" }
-          - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+          - { label: "Video Upload", name: "video", widget: "file", required: false }
+          - { label: "Video Link", name: "url", widget: "string", required: false }
+          - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
           - { label: "Caption", name: "caption", widget: "string" }
+          - { label: "Featured", name: "featured", widget: "boolean", required: false }
 
   - name: "events"
     label: "Events"

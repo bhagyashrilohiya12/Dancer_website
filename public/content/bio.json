@@ -1,5 +1,13 @@
 {
   "name": "Your Name",
   "title": "Dancer & Choreographer",
+  "tagline": "Movement-driven stories for stage, film, and live events.",
+  "location": "London, UK",
+  "styles": ["Contemporary", "Afro", "Heels"],
+  "press": ["BBC Arts", "Nike", "Sadler's Wells"],
+  "availability": "Worldwide - In-person & remote",
+  "responseTime": "Typically replies within 24-48 hours",
+  "bookingTypes": ["Stage performances", "Music videos", "Workshops", "Brand campaigns"],
+  "bookingBlurb": "Available for performance, choreography, and creative collaborations. Let's build something memorable together.",
   "bio": "Write a short biography here about your dance journey, achievements, and style."
 }

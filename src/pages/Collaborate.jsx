@@ -4,7 +4,7 @@ import "../App.css";
 export default function Collaborate() {
   const [contact, setContact] = useState({ email: "" });
   useEffect(() => {
-    fetch('/src/content/contact.json').then(r => r.json()).then(setContact);
+    fetch('/content/contact.json').then(r => r.json()).then(setContact);
   }, []);
   return (
     <section className="collaborate-page" data-aos="fade-up">
